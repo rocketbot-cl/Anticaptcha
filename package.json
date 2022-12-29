@@ -2,9 +2,9 @@
   "author": "Danilo Toro",
   "description": "Module to resolve captcha with anti-captcha",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "homepage": "http://rocketbot.co/",
+  "homepage": "http://rocketbot.com/",
   "linux": true,
   "windows": true,
   "mac": true,
@@ -36,7 +36,7 @@
       "pr": {
         "title": "Resolver ReCaptcha",
         "description": "Resolva ReCaptcha com a API https://anti-captcha.com",
-        "title_options": "选择选项",
+        "title_options": "Selecione uma opção",
         "options": null
       },
       "form": {
@@ -53,6 +53,11 @@
               "es": "Key Anticaptcha",
               "en": "Key Anticaptcha",
               "pr": "Key Anticaptcha"
+            },
+            "description": {
+              "es": "Key de su cuenta anticaptcha",
+              "en": "Key of your anticaptcha account",
+              "pr": "Key da sua conta anticaptcha"
             },
             "help": {
               "es": "Lo encontrará en la sección dashboard de anti-captcha.com",
@@ -71,8 +76,13 @@
             },
             "title": {
               "es": "Url de la página que tiene ReCaptcha",
-              "en": "Url de la página que tiene ReCaptcha",
+              "en": "Url of the page that has ReCaptcha",
               "pr": "Url da página que contém ReCaptcha"
+            },
+            "description": {
+              "es": "Url de la página a la que se le va a resolver el ReCaptcha",
+              "en": "Url of the page to which the ReCaptcha will be resolved",
+              "pr": "Url da página para a qual o ReCaptcha será resolvido"
             },
             "id": "url",
             "css": "col-md-12"
@@ -89,6 +99,11 @@
               "en": "Token ReCaptcha",
               "pr": "Token ReCaptcha"
             },
+            "description": {
+              "es": "Token ReCaptcha que se obtiene en la página que tiene ReCaptcha",
+              "en": "ReCaptcha Token that is obtained in the page that has ReCaptcha",
+              "pr": "Token ReCaptcha que é obtido na página que contém ReCaptcha"
+            },
             "id": "sitekey",
             "css": "col-md-12"
           },
@@ -100,6 +115,11 @@
               "pr": "Variable"
             },
             "title": {
+              "es": "Variable donde se almacena el resultado de Anticaptcha",
+              "en": "Variable where the Anticaptcha result is stored",
+              "pr": "Variável onde o resultado será salvo"
+            },
+            "description": {
               "es": "Variable donde se almacena el resultado de Anticaptcha",
               "en": "Variable where the Anticaptcha result is stored",
               "pr": "Variável onde o resultado será salvo"
@@ -161,6 +181,11 @@
               "en": "Key Anticaptcha",
               "pr": "Key Anticaptcha"
             },
+            "description": {
+              "es": "Key de su cuenta de anticaptcha",
+              "en": "Key of your anticaptcha account",
+              "pr": "Key da sua conta Anticaptcha"
+            },
             "id": "apikey",
             "css": "col-md-12"
           },
@@ -176,6 +201,11 @@
               "en": "Image path",
               "pr": "Rota da imagem"
             },
+            "description": {
+              "es": "Ruta a la imagen que se desea resolver",
+              "en": "Path to the image to be resolved",
+              "pr": "Rota para a imagem a ser resolvida"
+            },
             "id": "path",
             "css": "col-md-12"
           },
@@ -189,6 +219,11 @@
             "title": {
               "es": "Variable donde se almacena el resultado de Anticaptcha",
               "en": "Variable where the Anticaptcha result is stored",
+              "pr": "Variável onde o resultado será salvo"
+            },
+            "description": {
+              "es": "Variable donde se almacena el resultado",
+              "en": "Variable where the result is stored",
               "pr": "Variável onde o resultado será salvo"
             },
             "help": {
