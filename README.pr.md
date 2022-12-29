@@ -1,23 +1,23 @@
 # Anticaptcha
   
-Module to resolve captcha with anti-captcha  
+Módulo para resolver captcha com anti-captcha  
 
 *Read this in other languages: [English](README.md), [Español](README.es.md), [Portugues](README.pr.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
 
 
 
 ## Overview
 
 
-1. Resolve ReCaptcha  
-Resolve ReCaptcha with an API of https://anti-captcha.com
+1. Resolver ReCaptcha  
+Resolva ReCaptcha com a API https://anti-captcha.com
 
-2. Resolve Image Captcha   
-Resolve a Image Captcha with an API of https://anti-captcha.com  
+2. Resolver Captcha Imagen  
+Resolva um Captcha do tipo imagem com API do https://anti-captcha.com  
 
 
 
