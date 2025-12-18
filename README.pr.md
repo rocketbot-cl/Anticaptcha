@@ -1,13 +1,18 @@
+
+
+
+
 # Anticaptcha
   
-Módulo para resolver captcha com anti-captcha  
+Módulo para resolver captchas com anti-captcha  
 
-*Read this in other languages: [English](README.md), [Español](README.es.md), [Portugues](README.pr.md).*
+*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
 
 ## Como instalar este módulo
   
-__Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
-
+Para instalar o módulo no Rocketbot Studio, pode ser feito de duas formas:
+1. Manual: __Baixe__ o arquivo .zip e descompacte-o na pasta módulos. O nome da pasta deve ser o mesmo do módulo e dentro dela devem ter os seguintes arquivos e pastas: \__init__.py, package.json, docs, example e libs. Se você tiver o aplicativo aberto, atualize seu navegador para poder usar o novo módulo.
+2. Automático: Ao entrar no Rocketbot Studio na margem direita você encontrará a seção **Addons**, selecione **Install Mods**, procure o módulo desejado e aperte instalar.  
 
 
 ## Overview
@@ -17,7 +22,10 @@ __Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot
 Resolva ReCaptcha com a API https://anti-captcha.com
 
 2. Resolver Captcha Imagen  
-Resolva um Captcha do tipo imagem com API do https://anti-captcha.com  
+Resolva um Captcha do tipo imagem com API do https://anti-captcha.com
+
+3. Resolver hCaptcha  
+Resolva um Captcha do tipo hCaptcha com API de https://anti-captcha.com  
 
 
 
