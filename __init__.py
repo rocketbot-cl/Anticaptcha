@@ -67,6 +67,38 @@ try:
             print("task finished with error " + solver.error_code)
             SetVar(var_, solver.error_code)
 
+    if module == "HCaptcha":
+        from anticaptchaofficial.hcaptchaproxyless import *
+
+        api_key = GetParams("apikey")
+        site_key = GetParams("sitekey")
+        url = GetParams("url")
+        var_ = GetParams("result")
+        rqdata = GetParams("rqdata")  # opcional, si el sitio lo requiere
+
+        if not api_key:
+            raise Exception("Api key field is empty")
+        if not site_key:
+            raise Exception("Site key field is empty")
+        if not url:
+            raise Exception("Url field is empty")
+
+        solver = hCaptchaProxyless()
+        solver.set_verbose(1)
+        solver.set_key(api_key)
+        solver.set_website_url(url)
+        solver.set_website_key(site_key)
+
+        if rqdata:
+            solver.set_data(rqdata)
+
+        g_response = solver.solve_and_return_solution()
+        if g_response != 0 and var_:
+            SetVar(var_, g_response)
+        else:
+            print("task finished with error " + str(solver.error_code))
+            SetVar(var_, solver.error_code)
+
 except Exception as e:
     print("\x1B[" + "31;40m" + str(e) + "\x1B[" + "0m")
     PrintException()
